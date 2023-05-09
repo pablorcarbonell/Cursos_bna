@@ -1,0 +1,117 @@
+2023-05-09 16:00:42 [Debug] Hosting starting
+2023-05-09 16:00:43 [Information] Now listening on: "http://localhost:5087"
+2023-05-09 16:00:43 [Debug] Loaded hosting startup assembly "ServicioTransferencia"
+2023-05-09 16:00:43 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh"
+2023-05-09 16:00:43 [Debug] Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net"
+2023-05-09 16:00:43 [Information] Application started. Press Ctrl+C to shut down.
+2023-05-09 16:00:43 [Information] Hosting environment: "Development"
+2023-05-09 16:00:43 [Information] Content root path: "C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencia\"
+2023-05-09 16:00:43 [Debug] Hosting started
+2023-05-09 16:00:43 [Debug] Connection id ""0HMQGNUOBPD1U"" received FIN.
+2023-05-09 16:00:43 [Debug] Connection id ""0HMQGNUOBPD1U"" accepted.
+2023-05-09 16:00:43 [Debug] Connection id ""0HMQGNUOBPD1U"" started.
+2023-05-09 16:00:43 [Debug] Connection id ""0HMQGNUOBPD1U"" sending FIN because: ""The client closed the connection.""
+2023-05-09 16:00:43 [Debug] Connection id ""0HMQGNUOBPD1U"" disconnecting.
+2023-05-09 16:00:43 [Debug] Connection id ""0HMQGNUOBPD1U"" stopped.
+2023-05-09 16:00:45 [Debug] Connection id ""0HMQGNUOBPD1V"" accepted.
+2023-05-09 16:00:45 [Debug] Connection id ""0HMQGNUOBPD1V"" started.
+2023-05-09 16:00:45 [Debug] Connection id ""0HMQGNUOBPD20"" accepted.
+2023-05-09 16:00:45 [Debug] Connection id ""0HMQGNUOBPD20"" started.
+2023-05-09 16:00:45 [Information] Request starting HTTP/1.1 GET http://localhost:5087/swagger/index.html - -
+2023-05-09 16:00:45 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2023-05-09 16:00:45 [Debug] No candidates found for the request path '"/swagger/index.html"'
+2023-05-09 16:00:45 [Debug] Request did not match any endpoints
+2023-05-09 16:00:46 [Debug] Response markup is scheduled to include browser refresh script injection.
+2023-05-09 16:00:47 [Debug] Response markup was updated to include browser refresh script injection.
+2023-05-09 16:00:47 [Debug] Connection id ""0HMQGNUOBPD20"" completed keep alive response.
+2023-05-09 16:00:47 [Information] Request finished HTTP/1.1 GET http://localhost:5087/swagger/index.html - - - 200 - text/html;charset=utf-8 1577.1001ms
+2023-05-09 16:00:47 [Information] Request starting HTTP/1.1 GET http://localhost:5087/_vs/browserLink - -
+2023-05-09 16:00:47 [Information] Request starting HTTP/1.1 GET http://localhost:5087/_framework/aspnetcore-browser-refresh.js - -
+2023-05-09 16:00:47 [Debug] Connection id ""0HMQGNUOBPD20"" completed keep alive response.
+2023-05-09 16:00:47 [Information] Request finished HTTP/1.1 GET http://localhost:5087/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 15.9633ms
+2023-05-09 16:00:47 [Debug] Connection id ""0HMQGNUOBPD1V"" completed keep alive response.
+2023-05-09 16:00:47 [Information] Request finished HTTP/1.1 GET http://localhost:5087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 137.2091ms
+2023-05-09 16:00:47 [Information] Request starting HTTP/1.1 GET http://localhost:5087/swagger/v1/swagger.json - -
+2023-05-09 16:00:47 [Debug] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2023-05-09 16:00:47 [Debug] Request did not match any endpoints
+2023-05-09 16:00:48 [Debug] Connection id ""0HMQGNUOBPD1V"" completed keep alive response.
+2023-05-09 16:00:48 [Information] Request finished HTTP/1.1 GET http://localhost:5087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 511.1675ms
+2023-05-09 16:00:50 [Debug] Connection id ""0HMQGNUOBPD1V"" received FIN.
+2023-05-09 16:00:50 [Debug] Connection id ""0HMQGNUOBPD20"" received FIN.
+2023-05-09 16:00:50 [Debug] Connection id ""0HMQGNUOBPD20"" sending FIN because: ""The client closed the connection.""
+2023-05-09 16:00:50 [Debug] Connection id ""0HMQGNUOBPD1V"" sending FIN because: ""The client closed the connection.""
+2023-05-09 16:00:50 [Debug] Connection id ""0HMQGNUOBPD20"" disconnecting.
+2023-05-09 16:00:50 [Debug] Connection id ""0HMQGNUOBPD1V"" disconnecting.
+2023-05-09 16:00:50 [Debug] Connection id ""0HMQGNUOBPD20"" stopped.
+2023-05-09 16:00:50 [Debug] Connection id ""0HMQGNUOBPD1V"" stopped.
+2023-05-09 16:00:53 [Debug] Connection id ""0HMQGNUOBPD21"" accepted.
+2023-05-09 16:00:53 [Debug] Connection id ""0HMQGNUOBPD21"" started.
+2023-05-09 16:00:53 [Information] Request starting HTTP/1.1 GET http://localhost:5087/transferencias/ - -
+2023-05-09 16:00:53 [Debug] 1 candidate(s) found for the request path '"/transferencias/"'
+2023-05-09 16:00:53 [Debug] Request matched endpoint '"HTTP: GET /transferencias/"'
+2023-05-09 16:00:53 [Debug] Static files was skipped as the request already matched an endpoint.
+2023-05-09 16:00:54 [Information] Executing endpoint '"HTTP: GET /transferencias/"'
+2023-05-09 16:00:54 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 16:00:56 [Debug] Listando Transferencias
+2023-05-09 16:00:57 [Debug] The property '"Transferencia"."Respuestaid"' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-05-09 16:00:58 [Debug] Entity Framework Core "7.0.5" initialized '"TransferenciasDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"7.0.5"' with options: "StoreName=Transferencias "
+2023-05-09 16:00:58 [Debug] Compiling query expression: "
+"'"DbSet<Transferencia>()"'
+2023-05-09 16:00:58 [Debug] Generated query execution expression: "
+"'"queryContext => new QueryingEnumerable<Transferencia>(
+    queryContext, 
+    InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: Transferencia)
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<int>(
+                valueBuffer: valueBuffer, 
+                index: 0, 
+                property: Property: Transferencia.id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<int>(
+                valueBuffer: valueBuffer, 
+                index: 1, 
+                property: Property: Transferencia.Respuestaid (no field, int) Shadow Required FK Index), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 2, 
+                property: Property: Transferencia.cbuDestino (string)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 3, 
+                property: Property: Transferencia.cbuOrigen (string)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 4, 
+                property: Property: Transferencia.concepto (string)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 5, 
+                property: Property: Transferencia.cuilDestinatario (string)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 6, 
+                property: Property: Transferencia.cuilOriginante (string)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 7, 
+                property: Property: Transferencia.descripcion (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<double>(
+                valueBuffer: valueBuffer, 
+                index: 8, 
+                property: Property: Transferencia.importe (double) Required) 
+        })), 
+    Func<QueryContext, ValueBuffer, Transferencia>, 
+    ServicioTransferencia.TransferenciasDb, 
+    False, 
+    True
+)"'
+2023-05-09 16:00:58 [Information] Executed endpoint '"HTTP: GET /transferencias/"'
+2023-05-09 16:00:58 [Debug] Connection id ""0HMQGNUOBPD21"" completed keep alive response.
+2023-05-09 16:00:58 [Debug] '"TransferenciasDb"' disposed.
+2023-05-09 16:00:58 [Information] Request finished HTTP/1.1 GET http://localhost:5087/transferencias/ - - - 200 0 - 4428.1672ms
+2023-05-09 16:01:00 [Debug] Connection id ""0HMQGNUOBPD21"" received FIN.
+2023-05-09 16:01:00 [Debug] Connection id ""0HMQGNUOBPD21"" sending FIN because: ""The client closed the connection.""
+2023-05-09 16:01:00 [Debug] Connection id ""0HMQGNUOBPD21"" disconnecting.
+2023-05-09 16:01:00 [Debug] Connection id ""0HMQGNUOBPD21"" stopped.

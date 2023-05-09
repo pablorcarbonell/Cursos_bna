@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lOWCBQm5bw4bLMR0j33NVfdHG0+c9sW8vXUBaiBQWvnLIp/3b6SSLYj/iaMiMX/9n3KhUq4IIcqVIZmfj5M3zg==",
+  "dgSpecHash": "pvPegObnNHNNCB+AwSFqJuvwbH4A2trfZuVPjO0CLyHQzM8TEXpfUyhf1ee8mXblwqM3GDGR7NAtRL0PLp+FTg==",
   "success": true,
-  "projectFilePath": "F:\\Git\\Cursos\\Microservicios\\Common\\Common.csproj",
+  "projectFilePath": "C:\\Users\\bonel\\Documents\\Git\\Cursos_bna\\Microservicios\\Common\\Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bonel\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\bonel\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -42,6 +42,7 @@
     "C:\\Users\\bonel\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\bonel\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\bonel\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\bonel\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
     "C:\\Users\\bonel\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\bonel\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\bonel\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
