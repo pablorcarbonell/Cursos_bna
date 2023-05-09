@@ -15,7 +15,7 @@ namespace ServicioTransferencia
         public double importe { get; set; }
         public string? concepto { get; set; }
         public string? descripcion { get; set; }
-        public Respuesta respuesta { get; set; } = new Respuesta();
+        public Respuesta? respuesta { get; set; } = new Respuesta();
     }
 
     public class Respuesta

@@ -148,3 +148,194 @@ System.Net.Http.HttpRequestException: No se puede establecer una conexión ya qu
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2023-05-09 19:49:16 [Information] Request finished HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 238 - 500 - text/plain;+charset=utf-8 16411.1970ms
+2023-05-09 20:26:35 [Information] Request starting HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 238
+2023-05-09 20:26:35 [Information] Executing endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:26:43 [Information] Now listening on: "http://localhost:5087"
+2023-05-09 20:26:43 [Information] Application started. Press Ctrl+C to shut down.
+2023-05-09 20:26:43 [Information] Hosting environment: "Development"
+2023-05-09 20:26:43 [Information] Content root path: "C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencia\"
+2023-05-09 20:26:45 [Information] Request starting HTTP/1.1 GET http://localhost:5087/swagger/index.html - -
+2023-05-09 20:26:45 [Information] Request finished HTTP/1.1 GET http://localhost:5087/swagger/index.html - - - 200 - text/html;charset=utf-8 780.5531ms
+2023-05-09 20:26:45 [Information] Request starting HTTP/1.1 GET http://localhost:5087/_framework/aspnetcore-browser-refresh.js - -
+2023-05-09 20:26:45 [Information] Request starting HTTP/1.1 GET http://localhost:5087/_vs/browserLink - -
+2023-05-09 20:26:45 [Information] Request finished HTTP/1.1 GET http://localhost:5087/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 12.3698ms
+2023-05-09 20:26:45 [Information] Request finished HTTP/1.1 GET http://localhost:5087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.4709ms
+2023-05-09 20:26:46 [Information] Request starting HTTP/1.1 GET http://localhost:5087/swagger/v1/swagger.json - -
+2023-05-09 20:26:46 [Information] Request finished HTTP/1.1 GET http://localhost:5087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 294.5657ms
+2023-05-09 20:27:31 [Information] Request starting HTTP/1.1 GET http://localhost:5087/transferencias/ - -
+2023-05-09 20:27:31 [Information] Executing endpoint '"HTTP: GET /transferencias/"'
+2023-05-09 20:27:33 [Information] Executed endpoint '"HTTP: GET /transferencias/"'
+2023-05-09 20:27:33 [Information] Request finished HTTP/1.1 GET http://localhost:5087/transferencias/ - - - 200 0 - 1420.9606ms
+2023-05-09 20:27:59 [Information] Request starting HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 259
+2023-05-09 20:27:59 [Information] Executing endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:27:59 [Information] Executed endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:27:59 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "Transferencia transferencia" from the request body as JSON.
+ ---> System.Text.Json.JsonException: 'O' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'O' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCoreAsObject(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](Utf8JsonReader& reader, JsonTypeInfo jsonTypeInfo, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.ReadFromStreamAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, Type type, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, Type type, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass46_3.<<HandleRequestBodyAndCompileRequestDelegate>b__2>d.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass46_3.<<HandleRequestBodyAndCompileRequestDelegate>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-05-09 20:28:00 [Information] Request finished HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 259 - 400 - text/plain;+charset=utf-8 111.2263ms
+2023-05-09 20:28:01 [Information] Request starting HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 259
+2023-05-09 20:28:01 [Information] Executing endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:28:01 [Information] Executed endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:28:01 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "Transferencia transferencia" from the request body as JSON.
+ ---> System.Text.Json.JsonException: 'O' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'O' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCoreAsObject(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](Utf8JsonReader& reader, JsonTypeInfo jsonTypeInfo, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.ReadFromStreamAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, Type type, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, Type type, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass46_3.<<HandleRequestBodyAndCompileRequestDelegate>b__2>d.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass46_3.<<HandleRequestBodyAndCompileRequestDelegate>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-05-09 20:28:01 [Information] Request finished HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 259 - 400 - text/plain;+charset=utf-8 4.3995ms
+2023-05-09 20:29:03 [Information] Now listening on: "http://localhost:5087"
+2023-05-09 20:29:03 [Information] Application started. Press Ctrl+C to shut down.
+2023-05-09 20:29:03 [Information] Hosting environment: "Development"
+2023-05-09 20:29:03 [Information] Content root path: "C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencia\"
+2023-05-09 20:29:04 [Information] Request starting HTTP/1.1 GET http://localhost:5087/swagger/index.html - -
+2023-05-09 20:29:05 [Information] Request starting HTTP/1.1 GET http://localhost:5087/_framework/aspnetcore-browser-refresh.js - -
+2023-05-09 20:29:05 [Information] Request finished HTTP/1.1 GET http://localhost:5087/swagger/index.html - - - 200 - text/html;charset=utf-8 889.2454ms
+2023-05-09 20:29:05 [Information] Request finished HTTP/1.1 GET http://localhost:5087/_framework/aspnetcore-browser-refresh.js - - - 200 12012 application/javascript;+charset=utf-8 10.5295ms
+2023-05-09 20:29:05 [Information] Request starting HTTP/1.1 GET http://localhost:5087/_vs/browserLink - -
+2023-05-09 20:29:05 [Information] Request finished HTTP/1.1 GET http://localhost:5087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.7384ms
+2023-05-09 20:29:05 [Information] Request starting HTTP/1.1 GET http://localhost:5087/swagger/v1/swagger.json - -
+2023-05-09 20:29:06 [Information] Request finished HTTP/1.1 GET http://localhost:5087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 318.3144ms
+2023-05-09 20:29:14 [Information] Request starting HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 259
+2023-05-09 20:29:14 [Information] Executing endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:29:14 [Information] Executed endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:29:14 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "Transferencia transferencia" from the request body as JSON.
+ ---> System.Text.Json.JsonException: 'O' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'O' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCoreAsObject(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](Utf8JsonReader& reader, JsonTypeInfo jsonTypeInfo, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.ReadFromStreamAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, Type type, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, Type type, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass46_3.<<HandleRequestBodyAndCompileRequestDelegate>b__2>d.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass46_3.<<HandleRequestBodyAndCompileRequestDelegate>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-05-09 20:29:14 [Information] Request finished HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 259 - 400 - text/plain;+charset=utf-8 113.7716ms
+2023-05-09 20:29:38 [Information] Request starting HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 259
+2023-05-09 20:29:38 [Information] Executing endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:29:38 [Information] Executed endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:29:38 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "Transferencia transferencia" from the request body as JSON.
+ ---> System.Text.Json.JsonException: 'O' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'O' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCoreAsObject(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](Utf8JsonReader& reader, JsonTypeInfo jsonTypeInfo, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ContinueDeserialize[TValue](ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.ReadFromStreamAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, Type type, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, Type type, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass46_3.<<HandleRequestBodyAndCompileRequestDelegate>b__2>d.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass46_3.<<HandleRequestBodyAndCompileRequestDelegate>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-05-09 20:29:38 [Information] Request finished HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 259 - 400 - text/plain;+charset=utf-8 8.7135ms
+2023-05-09 20:30:12 [Information] Request starting HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 193
+2023-05-09 20:30:12 [Information] Executing endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:30:22 [Information] Procesando Transferencia
+2023-05-09 20:30:29 [Information] Executed endpoint '"HTTP: POST /transferencias/"'
+2023-05-09 20:30:29 [Error] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión. (localhost:5092)
+ ---> System.Net.Sockets.SocketException (10061): No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ServicioTransferencia.Manager.validarCuitBna(String cuilOriginante, String cuilDestinatario) in C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencia\Manager.cs:line 12
+   at Program.<>c.<<<Main>$>b__0_6>d.MoveNext() in C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencia\Program.cs:line 78
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass46_3.<<HandleRequestBodyAndCompileRequestDelegate>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-05-09 20:30:29 [Information] Request finished HTTP/1.1 POST http://localhost:5087/transferencias/ application/json 193 - 500 - text/plain;+charset=utf-8 17443.4230ms
