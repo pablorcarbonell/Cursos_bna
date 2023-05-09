@@ -41,6 +41,15 @@ app.MapGet("/clientes/", async (ClienteDb db) =>
 app.MapGet("/clientes/Empleados", async (ClienteDb db) =>
     await db.Clientes.Where(t => t.esEmpleadoBNA).ToListAsync());
 
+
+app.MapGet("/clientes/cuit", async (string cuit, ClienteDb db) =>
+    await db.Clientes.Where(t => t.cuil == cuit).ToListAsync()
+     is List<Cliente> listaliente && listaliente.Count > 0
+            ? Results.Ok(listaliente)
+            : Results.NotFound()
+            );
+    
+
 app.MapGet("/clientes/{id}", async (int id, ClienteDb db) =>
     await db.Clientes.FindAsync(id)
         is Cliente cliente

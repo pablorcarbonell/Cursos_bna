@@ -98,3 +98,4 @@ C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencia\obj
 C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencia\obj\Debug\net6.0\ServicioTransferencia.pdb
 C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencia\obj\Debug\net6.0\ServicioTransferencia.genruntimeconfig.cache
 C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencia\obj\Debug\net6.0\ref\ServicioTransferencia.dll
+C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencia\bin\Debug\net6.0\Newtonsoft.Json.dll

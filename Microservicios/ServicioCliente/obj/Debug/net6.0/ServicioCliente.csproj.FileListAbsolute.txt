@@ -186,3 +186,4 @@ C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioCliente\obj\Debug
 C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioCliente\obj\Debug\net6.0\ServicioCliente.pdb
 C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioCliente\obj\Debug\net6.0\ServicioCliente.genruntimeconfig.cache
 C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioCliente\obj\Debug\net6.0\ref\ServicioCliente.dll
+C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioCliente\bin\Debug\net6.0\Newtonsoft.Json.dll
