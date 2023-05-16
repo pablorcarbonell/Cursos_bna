@@ -1,0 +1,31 @@
+2023-05-15 23:30:50 [Information] Now listening on: "http://localhost:5092"
+2023-05-15 23:30:51 [Information] Application started. Press Ctrl+C to shut down.
+2023-05-15 23:30:51 [Information] Hosting environment: "Development"
+2023-05-15 23:30:51 [Information] Content root path: "C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencias\ServicioCliente\"
+2023-05-15 23:30:54 [Information] Request starting HTTP/1.1 GET http://localhost:5092/swagger/index.html - -
+2023-05-15 23:30:55 [Information] Request finished HTTP/1.1 GET http://localhost:5092/swagger/index.html - - - 200 - text/html;charset=utf-8 1615.4189ms
+2023-05-15 23:30:55 [Information] Request starting HTTP/1.1 GET http://localhost:5092/_vs/browserLink - -
+2023-05-15 23:30:55 [Information] Request starting HTTP/1.1 GET http://localhost:5092/_framework/aspnetcore-browser-refresh.js - -
+2023-05-15 23:30:55 [Information] Request finished HTTP/1.1 GET http://localhost:5092/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 11.8246ms
+2023-05-15 23:30:56 [Information] Request finished HTTP/1.1 GET http://localhost:5092/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 209.9265ms
+2023-05-15 23:30:56 [Information] Request starting HTTP/1.1 GET http://localhost:5092/swagger/v1/swagger.json - -
+2023-05-15 23:30:57 [Information] Request finished HTTP/1.1 GET http://localhost:5092/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 921.0301ms
+2023-05-15 23:54:40 [Information] Now listening on: "http://localhost:5092"
+2023-05-15 23:54:40 [Information] Application started. Press Ctrl+C to shut down.
+2023-05-15 23:54:40 [Information] Hosting environment: "Development"
+2023-05-15 23:54:40 [Information] Content root path: "C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencias\ServicioCliente\"
+2023-05-15 23:54:42 [Information] Request starting HTTP/1.1 GET http://localhost:5092/swagger/index.html - -
+2023-05-15 23:54:44 [Information] Request finished HTTP/1.1 GET http://localhost:5092/swagger/index.html - - - 200 - text/html;charset=utf-8 1250.4628ms
+2023-05-15 23:54:44 [Information] Request starting HTTP/1.1 GET http://localhost:5092/_vs/browserLink - -
+2023-05-15 23:54:44 [Information] Request starting HTTP/1.1 GET http://localhost:5092/_framework/aspnetcore-browser-refresh.js - -
+2023-05-15 23:54:44 [Information] Request finished HTTP/1.1 GET http://localhost:5092/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 18.4785ms
+2023-05-15 23:54:44 [Information] Request finished HTTP/1.1 GET http://localhost:5092/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 68.1340ms
+2023-05-15 23:54:44 [Information] Request starting HTTP/1.1 GET http://localhost:5092/swagger/v1/swagger.json - -
+2023-05-15 23:54:44 [Information] Request finished HTTP/1.1 GET http://localhost:5092/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 556.8454ms
+2023-05-15 23:56:49 [Information] Request starting HTTP/1.1 GET http://localhost:5092/clientes - -
+2023-05-15 23:56:49 [Information] Executing endpoint '"HTTP: GET /clientes/"'
+2023-05-15 23:56:54 [Information] Executed DbCommand ("113"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[id], [c].[apellido], [c].[cuil], [c].[esEmpleadoBNA], [c].[nombre], [c].[nroDocumento], [c].[paisOrigen], [c].[tipoDocumento]
+FROM [Clientes] AS [c]"
+2023-05-15 23:56:54 [Information] Executed endpoint '"HTTP: GET /clientes/"'
+2023-05-15 23:56:54 [Information] Request finished HTTP/1.1 GET http://localhost:5092/clientes - - - 200 - application/json;+charset=utf-8 4678.3928ms

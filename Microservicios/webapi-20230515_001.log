@@ -1,0 +1,19 @@
+2023-05-15 23:56:07 [Information] Now listening on: "http://localhost:5270"
+2023-05-15 23:56:07 [Information] Application started. Press Ctrl+C to shut down.
+2023-05-15 23:56:07 [Information] Hosting environment: "Development"
+2023-05-15 23:56:07 [Information] Content root path: "C:\Users\bonel\Documents\Git\Cursos_bna\Microservicios\ServicioTransferencias\ServicioTransferencias\"
+2023-05-15 23:56:08 [Information] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - -
+2023-05-15 23:56:09 [Information] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - - - 200 - text/html;charset=utf-8 1091.7925ms
+2023-05-15 23:56:09 [Information] Request starting HTTP/1.1 GET http://localhost:5270/_framework/aspnetcore-browser-refresh.js - -
+2023-05-15 23:56:09 [Information] Request starting HTTP/1.1 GET http://localhost:5270/_vs/browserLink - -
+2023-05-15 23:56:09 [Information] Request finished HTTP/1.1 GET http://localhost:5270/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 8.6525ms
+2023-05-15 23:56:09 [Information] Request finished HTTP/1.1 GET http://localhost:5270/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 71.5196ms
+2023-05-15 23:56:09 [Information] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - -
+2023-05-15 23:56:09 [Information] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 288.7580ms
+2023-05-15 23:59:58 [Information] Request starting HTTP/1.1 POST http://localhost:5270/api/Transferencias/Transferir application/json 253
+2023-05-15 23:59:58 [Information] Executing endpoint '"ServicioTransferencias.Controllers.TransferenciasController.Transferir (ServicioTransferencias)"'
+2023-05-15 23:59:58 [Information] Route matched with "{action = \"Transferir\", controller = \"Transferencias\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Transferir(DB.Transferencia)" on controller "ServicioTransferencias.Controllers.TransferenciasController" ("ServicioTransferencias").
+2023-05-15 23:59:59 [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2023-05-15 23:59:59 [Information] Executed action "ServicioTransferencias.Controllers.TransferenciasController.Transferir (ServicioTransferencias)" in 736.2466ms
+2023-05-15 23:59:59 [Information] Executed endpoint '"ServicioTransferencias.Controllers.TransferenciasController.Transferir (ServicioTransferencias)"'
+2023-05-15 23:59:59 [Information] Request finished HTTP/1.1 POST http://localhost:5270/api/Transferencias/Transferir application/json 253 - 400 - application/problem+json;+charset=utf-8 823.1884ms
